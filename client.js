@@ -12,9 +12,8 @@ const connect = function (socket) {
 
   conn.on('connect', () => {
     // code that does something
-    conn.write('Name: EZE');
-    console.log('Successfully connected');
-
+    console.log('Successfully connected to game serve');
+    conn.write("Name: EZE");
   });
   
   return conn;
