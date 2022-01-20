@@ -13,6 +13,8 @@ const connect = () => {
   conn.setEncoding("utf8");
   conn.write("Name: EZE")
 
+  conn.write("Message: Somebody see this msg?")
+
   conn.on('connect', (incomingData) => {
     // code that does something
     console.log('Successfully connected to game serve');
